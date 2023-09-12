@@ -1,4 +1,6 @@
 body{
   background-color: coral;
-  text-color:white ;
+}
+p{
+  color: white;
 }
