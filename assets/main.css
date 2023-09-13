@@ -1,5 +1,5 @@
 body{
-  background-color: coral;
+  background-color: rgb(250, 118, 70);
 }
 p{
   color: white;
@@ -7,6 +7,12 @@ p{
 h1{
   color: white;  
 }
-link{
+a:link{
   color:white;
+}
+a:visited{
+  color:white;
+}
+a:hover{
+  background-color:rgb(189, 73, 10);
 }
