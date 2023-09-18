@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(250, 118, 70);
+  background-color: rgb(36, 109, 169);
 }
 p{
   color: white;
@@ -14,11 +14,11 @@ a:visited{
   color:white;
 }
 a:hover{
-  background-color:rgb(189, 73, 10);
+  background-color:rgb(16, 59, 93);
 }
-* {
+* p {
   text-align: center;
 }
-  body {
+  h1 {
     text-align: center;
       }
