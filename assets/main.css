@@ -32,3 +32,11 @@ a:hover{
 .ul {
   text-align: center;
   }
+.list{
+  margin: auto;
+  text-align: center;
+}
+.ul {
+  text-align: center; /* Center-align the bullet points */
+  list-style-position: inside; /* Place the bullet points inside the list items */
+}
