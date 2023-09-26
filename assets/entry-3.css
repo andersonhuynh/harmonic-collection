@@ -28,4 +28,9 @@ a:hover{
   margin-right: auto;
   width: 50%;
   margin-top: 5px;
-      }
+}
+.box {
+  background:pink;
+  width: 300px;
+  margin: 500px;
+}
