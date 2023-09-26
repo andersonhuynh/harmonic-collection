@@ -40,3 +40,24 @@ a:hover{
   text-align: center; /* Center-align the bullet points */
   list-style-position: inside; /* Place the bullet points inside the list items */
 }
+/* Center the main list */
+.main-list {
+  display: flex;
+  justify-content: center; /* Horizontally center the list */
+  align-items: center; /* Vertically center the list */
+}
+
+/* Style the main list items */
+.main-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-list ul li {
+  display: inline;
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+.main-list ul li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
