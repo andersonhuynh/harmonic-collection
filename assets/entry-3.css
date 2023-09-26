@@ -58,9 +58,9 @@ a:hover{
     width: 50%; /* You can adjust this width as needed */
   }
 
-  .image-switch:hover #image1 {
+  .image-switch:hover #bedsidetable {
     display: none;
 }
-.image-switch:hover #image2 {
+.image-switch:hover #openbedsidetable {
     display: block;
 }
