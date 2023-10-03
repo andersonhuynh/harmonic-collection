@@ -14,7 +14,7 @@ a:visited{
   color:white;
 }
 a:hover{
-  background-color:rgb(16, 73, 93);
+  background-color:rgba(255, 255, 255, 0);
 }
 * p {
   text-align: center;
