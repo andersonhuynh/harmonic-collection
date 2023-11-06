@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.typekit.net/iad6qss.css">
+    <style>
+
+  h1{text-align: center;
+      font-size: 4em;
+      color:rgb(0, 0, 0);
+      transition: 2s}
+  h1:hover {color:rgb(0, 0, 0);
+        font-size: 5em;}
+
+  h1{ font-family: "forma-djr-display", sans-serif;
+      font-weight: 600;
+      font-style: normal;}
+
+  p{ font-family: "bickham-script-pro-3", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  font-style: normal;}
+
+    </style>
+    <title>entry 7: what's in my wallet?</title>
+    <link href="../assets/entry-4.css" rel="stylesheet">
+
+<marquee style="color:#ffffff"> 𓆝✴𓆟✴𓆞✴𓆝✴𓆟 what's in my bag? what's in my fridge? 
+    what's in my jean pocket? what's in my head? what's in my closet? 
+    what's in my freezer? what's in my shoe? what's in my wallet? 
+    ßwhats in my laundry hamper? what's in my shelf? what's in my closet? 𓆝✴𓆟✴𓆞✴𓆝✴𓆟
+</marquee>
+  <h1>Welcome to my school bag</h1> 
+  <div style = "position:relative;left:3px;top: -70px;">  
+  <p style="color:#ffffff">welcome to my wallet, take a look inside:</p>
+  <body background="wallet.gif"></body>
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .row {
+      display: -ms-flexbox; /* IE 10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE 10 */
+      flex-wrap: wrap;
+      padding: 0px;
+    }
+    
+    /* Create two equal columns that sits next to each other */
+    .column {
+      -ms-flex: 50%; /* IE 10 */
+      flex: 50%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 100px;
+      vertical-align: middle;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: 10px;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #ffffff;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <!-- Header -->
+    <div class="header" id="myHeader">
+      <button class="btn active" onclick="one()">1</button>
+      <button class="btn" onclick="two()">2</button>
+    </div>
+    
+    <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+        <img src="image/charliecard.png" style="width:45%">
+        <img src="image/id.png"style="width:50%">
+        <img src="image/recipt.png"  style="width:50%">
+        <img src="image/metro.png" style="width:30%">
+        <img src="image/santa-monica.png" style="width:50%">
+        <img src="image/credit.png" style="width:40%">
+        <img src="image/recipt.png" style="width:60%">
+        <img src="image/california.png" class="center" style="width:40%">
+        <img src="image/boba-card.png" class="left" style="width:40%">
+        <img src="image/bowlero.png" class="left" style="width:40%">
+        <img src="image/tile.png" class="left" style="width:40%">
+        <img src="image/seattle.png" class="center" style="width:40%">
+        <img src="image/hilton.png" class="left" style="width:40%">
+        <img src="image/boba.png" class="center" style="width:40%">
+
+      </div>
+    <script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+    
+    // Declare a loop variable
+    var i;
+    
+    // Full-width images
+    function one() {
+        for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+      }
+    }
+    
+    // Two images side by side
+    function two() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+      }
+    }
+    
+    // Four images side by side
+    function four() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+      }
+    }
+    
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myHeader");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+<body>
+<!--Navigation-->
+  <div> 
+    <div style = "position:relative;left:-10%;top: 0px;">  
+        <ul style="color:#ffffff">
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../work.html">work</a></li>
+            <li><a href="../about.html">about</a></li>
+            <li><a href="../entry-6/entry-6.html">previous entry</a></li>
+            <li><a href="../entry-8/entry-8.html">next entry</a></li>
+        </ul>
+      </nav>
+  </div>
+  <!--Navigation-->
+</body>
+</html> 
