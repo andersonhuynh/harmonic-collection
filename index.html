@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      // Function to simulate typewriter effect
+      function typeWriterEffect(element, text, speed) {
+        let i = 0;
+        function type() {
+          if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+          }
+        }
+        type();
+      }
+
+      // Call the typewriter effect on the h1 element
+      document.addEventListener("DOMContentLoaded", function () {
+        const h1Element = document.querySelector("h1");
+        const text = h1Element.innerText;
+        h1Element.innerHTML = ""; // Clear the original text
+        typeWriterEffect(h1Element, text, 50); // Adjust the speed (in milliseconds) as needed
+      });
+    </script>
+  </head>
+  <body>
     <link rel="stylesheet" href="https://use.typekit.net/iad6qss.css">
     <link href="../assets/main.css" rel="stylesheet">
     <title>Anderson Huynh's first website for Core 1 Interaction FW 23 Parsons</title>
