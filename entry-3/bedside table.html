@@ -21,6 +21,33 @@
   font-style: normal;}
 
     </style>
+    <style>
+      /* ... Existing styles ... */
+    
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .image-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
+        padding: 20px;
+        display: none; /* Hide the text by default */
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    
+      .image-container:hover .image-text {
+        display: block; /* Show the text when the image is hovered */
+      }
+    
+      /* ... Existing styles ... */
+    </style>
     <title>entry 3:what's in my fridge?</title>
     <link href="../assets/entry-3.css" rel="stylesheet">
 <marquee style="color:#310a0a"> 𓆝✴𓆟✴𓆞✴𓆝✴𓆟 what's in my bag? what's in my fridge? 
@@ -33,10 +60,15 @@
   <p style="color:#b12066">welcome to my bedside table, take a look inside:</p>
   <body background="images/bedside table.JPG"></body>
 
-  <img src="images/polaroid.png" style="
-  width:510px; height:640px;" class="left">
-  <img src="images/ocean.png" style="
-  width:400px; height:520px;" class="left">
+  <img src="images/polaroid.png" style="width: 510px; height: 640px;" class="image-container">
+<div class="image-text">
+  <p>Additional text for Polaroid image.</p>
+</div>
+
+<img src="images/ocean.png" style="width: 400px; height: 520px;" class="image-container">
+<div class="image-text">
+  <p>Additional text for Ocean image.</p>
+</div>
   <img src="images/match box.png" style="
   width:550px; height:720px;" class="left">
   <img src="images/sissors.png" style="
