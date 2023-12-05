@@ -110,3 +110,19 @@ body.fade-in-background {
 body.fade-in-background.loaded {
   opacity: 1; /* When the 'loaded' class is added, set opacity to 1 */
 }
+/* Your existing styles */
+audio {
+  position: fixed;
+  top: 770px; /* Adjust the top position as needed */
+  left: 30px; /* Adjust the right position as needed */
+  width: 300px; /* Adjust the width as needed */
+}
+
+audio::-webkit-media-controls-panel {
+  border-radius: 10px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+  color: #ffffff;
+}
