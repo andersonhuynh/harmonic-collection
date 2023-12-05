@@ -61,3 +61,52 @@ a:hover{
 .main-list ul li:last-child {
   margin-right: 0; /* Remove margin from the last list item */
 }
+/* Example for responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-size: 16px;
+}
+
+/* Example for using em */
+h1 {
+  font-size: 2em; /* This is equivalent to 32px (16px * 2) */
+}
+/* Example of a flex container */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* Example for a fluid container */
+.container {
+  width: 100%;
+  max-width: 1200px; /* You can set a maximum width if needed */
+  margin: 0 auto; /* Center the container */
+}
+/* Styles for small screens */
+@media only screen and (max-width: 600px) {
+  /* Your CSS styles for small screens go here */
+}
+
+/* Styles for medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Your CSS styles for medium screens go here */
+}
+
+/* Styles for large screens */
+@media only screen and (min-width: 1025px) {
+  /* Your CSS styles for large screens go here */
+}
+body.fade-in-background {
+  background-image: url('car.jpg'); /* Your background image URL */
+  background-size: cover;
+  background-position: center;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 1s ease-in-out; /* Add a smooth transition effect */
+}
+
+body.fade-in-background.loaded {
+  opacity: 1; /* When the 'loaded' class is added, set opacity to 1 */
+}
